@@ -84,7 +84,7 @@ En general, es recomendable guardar cada función en un archivo independiente qu
 
 Con estos sencillos pasos ya tenemos la estructura básica de un paquete, pero antes de "construirlo" es necesario documentar nuestro código, para facilitar su distribución y uso por parte de otros usuarios (o de nosotros mismos en un futuro). Generar documentación a través de `Roxygen2` es muy sencillo. Basta con añadir, al comienzo de nuestros archivos .R, una serie de campos que expliquen el uso de la función en cuestión. En nuestras funciones, los archivos documentados tendrían la siguiente forma:
 
-```{r} **ASCII CHARACTERS**
+```{r}
 #' Raiz cuadrada 1
 #'
 #' Función para calcular la raiz cuadrada.
