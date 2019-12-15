@@ -3,7 +3,6 @@ title: "Cómo crear paquetes de R \n"
 author: "Marcelino de la Cruz Rot^1^, David García-Callejas^2^"
 csl: ecosistemas.csl
 output:
-  pdf_document: default
   word_document:
     fig_caption: yes
     fig_height: 6
