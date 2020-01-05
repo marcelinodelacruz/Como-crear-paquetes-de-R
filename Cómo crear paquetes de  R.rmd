@@ -165,7 +165,7 @@ Como se puede observar, la parte dedicada a la documentación viene distinguida 
 ```{r}
 devtools::document()
 ```
-Si no ha habido ningún problema, esta acción habrá generado un archivo nuevo en nuestro directorio llamado `NAMESPACE`, así como un archivo .Rd en la subcarpeta `man` por cada función de nuestro paquete. El "espacio de nombres" es una guía que indica a R 1) si una función del paquete está disponible (una función exportable) o no (una función interna) y 2) dónde se encuentran las funciones de otros paquetes que se emplean dentro del código de nuestras funciones. Cada uno de los archivos .Rd contiene la documentación que hemos creado y servirá para generar las páginas de ayuda y el **man**ual del paquete cuando realicemos la instalación.
+Si no ha habido ningún problema, esta acción habrá generado un archivo nuevo en nuestro directorio llamado `NAMESPACE`, así como un archivo .Rd en la subcarpeta `man` por cada función de nuestro paquete. El "espacio de nombres" es una guía que indica a R 1) si una función del paquete está disponible (una función exportable) o no (una función interna) y 2) dónde se encuentran las funciones de otros paquetes que se emplean dentro del código de nuestras funciones. Cada uno de los archivos .Rd contiene la documentación que hemos creado y servirá para generar las páginas de ayuda y el manual del paquete cuando realicemos la instalación.
 
 # Creación del paquete
 
@@ -200,7 +200,7 @@ Además de lo esbozado en esta nota, los paquetes de R pueden incluir conjuntos 
 
 # Agradecimientos
 
-MCR agradece la financiación del proyecto REMEDINAL TE-CM (S2018/EMT-4338). DGC agradece la financiación del proyecto SIMPLEX MINECO PRPCGL2017-92436-EXP.
+MCR agradece la financiación del proyecto REMEDINAL TE-CM (S2018/EMT-4338). DGC agradece la financiación del proyecto SIMPLEX (MINECO PRPCGL2017-92436-EXP).
 
 
 ###### REFERENCIAS
