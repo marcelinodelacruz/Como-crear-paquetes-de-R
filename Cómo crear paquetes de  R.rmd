@@ -143,7 +143,7 @@ cat("#' Raíz cuadrada 1
 #' @return Raíz cuadrada de x
 #' @export
 #'
-#' @examples sqrt(10)
+#' @examples sqrtfun1(10)
 sqrtfun1 <- function(x) sqrt(x)",file="./R/sqrtfun1.R")
 
 cat("#' Raíz cuadrada 2
@@ -155,7 +155,7 @@ cat("#' Raíz cuadrada 2
 #' @return Raíz cuadrada de x
 #' @export
 #'
-#' @examples sqrt(10)
+#' @examples sqrtfun2(10)
 sqrtfun2 <- function(x) x^(1/2)", file="./R/sqrtfun2.R")
 
 ```
@@ -186,20 +186,21 @@ library(paqueteR)
 sqrtfun1(25)
 ?sqrtfun1
 ```
-Frente a la facilidad para crear un paquete sencillo como éste, la única pega que le podemos poner a `devtools` es que no siempre respeta los caracteres propios del español (por ejemplo, la **ñ** o las vocales con tilde) en los ficheros de ayuda. Teniendo en cuenta que lo habitual es escribir la documentación de los paquetes de R en inglés, esto no suele suponer un problema (que por otra parte se puede solucionar o bien evitando dichos caracteres o bien adoptando la aproximación ortodoxa promovida en el manual oficial y aprovechando la posibilidad de [codificación alternativa][encosing_issues]). 
+Frente a la facilidad para crear un paquete sencillo como éste, la única pega que le podemos poner a `devtools` es que no siempre respeta los caracteres propios del español (por ejemplo, la **ñ** o las vocales con tilde) en los ficheros de ayuda. Teniendo en cuenta que lo habitual es escribir la documentación de los paquetes de R en inglés, esto no suele suponer un problema (que por otra parte se puede solucionar o bien evitando dichos caracteres o bien adoptando la aproximación ortodoxa promovida en el manual oficial y aprovechando la posibilidad de [codificación alternativa][encoding_issues]). 
 
-Además de lo esbozado en esta nota, los paquetes de R pueden incluir conjuntos de datos, y son estructures ideales para trabajar con plataformas de control de versiones como git y el servidor github. En internet se pueden encontrar multitud de tutoriales específicos, entre los cuales recomendamos ...
+Además de lo esbozado en esta nota, los paquetes de R pueden incluir conjuntos de datos, y son estructures ideales para trabajar con plataformas de control de versiones como git y el servidor github. En internet se pueden encontrar multitud de tutoriales específicos, entre los cuales recomendamos [el desarrollado por Karl Broman][tutorial]. El código necesario para reproducir este documento y el `paqueteR` usado como ejemplo se puede consultar en [GitHub][github_nota].
 
 [1]: https://cloud.r-project.org/doc/manuals/r-release/R-exts.html
 [cran0]:  https://cran.r-project.org/
 [roxygen2]:  https://cloud.R-project.org/package=roxygen2/vignettes/roxygen2.html
 [DESCRIPTION_REF]: https://cloud.r-project.org/doc/manuals/r-release/R-exts.html#The-DESCRIPTION-file
-[encosing_issues]: https://cloud.r-project.org/doc/manuals/r-release/R-exts.html#Encoding-issues
-
+[encoding_issues]: https://cloud.r-project.org/doc/manuals/r-release/R-exts.html#Encoding-issues
+[tutorial]: https://kbroman.org/pkg_primer/
+[github_nota]: https://github.com/marcelinodelacruz/Como-crear-paquetes-de-R
 
 # Agradecimientos
 
-MCR agradece la financiación del proyecto REMEDINAL TE-CM (S2018/EMT-4338).
+MCR agradece la financiación del proyecto REMEDINAL TE-CM (S2018/EMT-4338). DGC agradece la financiación del proyecto SIMPLEX MINECO PRPCGL2017-92436-EXP.
 
 
 ###### REFERENCIAS
@@ -207,25 +208,4 @@ MCR agradece la financiación del proyecto REMEDINAL TE-CM (S2018/EMT-4338).
 ```{r write_citations, cache=FALSE, include=FALSE, eval=TRUE}
 #write.bibtex(file = "knitcitations.bib")
 write.bibtex(file = "references.bib", append=TRUE)
-```
-
-<div id = "refs"></div>
-
-
-
-###### PIES DE FIGURA
-
-**Figura 1**. Legenda de la figura 1.
-
-
-
-###### FIGURE LEGENDS
-
-**Figure 1**. English legend of FIg. 1.
-
-
-###### FIGURA 1
-
-```{r Fig1, eval=FALSE, echo=FALSE, fig.cap="Figura 1. Explicación de la figura 1", cache=FALSE}
-# plot(dune.o, pch=19, col=2)
 ```
